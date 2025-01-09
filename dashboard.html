@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
+    header("Location: login.html");
     exit;
 }
 ?>
@@ -48,7 +48,7 @@ if (!isset($_SESSION['username'])) {
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="login.php">User Login</a>
+                  <a class="nav-link" href="login.html">User Login</a>
                 </li>
               </ul>
               <form class="d-flex">
@@ -63,9 +63,9 @@ if (!isset($_SESSION['username'])) {
     </header>
 
     <h1>Welcome, <?php echo $_SESSION['username']; ?></h1>
-    <a href="recordproperties.php" class="btn btn-info" role="button">Record Properties</a>
-    <a href="display.php" class="btn btn-info" role="button">Dislay Forms</a>
-    <a href="logout.php" class="btn btn-info" role="button">Log Out</a>
+    <a href="recordproperties.html" class="btn btn-info" role="button">Record Properties</a>
+    <a href="display.html" class="btn btn-info" role="button">Dislay Forms</a>
+    <a href="logout.html" class="btn btn-info" role="button">Log Out</a>
    
 
     <footer class="footer ">
