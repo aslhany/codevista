@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
+    header("Location: login.html");
     exit;
 }
 ?>
@@ -48,7 +48,7 @@ if (!isset($_SESSION['username'])) {
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="login.php">User Login</a>
+                  <a class="nav-link" href="login.html">User Login</a>
                 </li>
               </ul>
               <form class="d-flex">
@@ -63,10 +63,10 @@ if (!isset($_SESSION['username'])) {
     </header>
 
     
-    <a href="insert.php" class="btn btn-info" role="button">Add Record</a>
-    <a href="update.php" class="btn btn-info" role="button">Update Record</a>
-    <a href="delete.php" class="btn btn-info" role="button">Delete Record</a>
-    <a href="dashboard.php" class="btn btn-info" role="button">Previous Page</a>
+    <a href="insert.html" class="btn btn-info" role="button">Add Record</a>
+    <a href="update.html" class="btn btn-info" role="button">Update Record</a>
+    <a href="delete.html" class="btn btn-info" role="button">Delete Record</a>
+    <a href="dashboard.html" class="btn btn-info" role="button">Previous Page</a>
    
 
     <footer class="footer ">
